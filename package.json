@@ -1,0 +1,38 @@
+{
+  "name": "tor-stem",
+  "version": "0.0.1",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "nodemon ./sample --exec babel-node  --presets es2015,stage-2",
+    "build": "babel src -d build",
+    "server": "node server/index.js"
+  },
+  "author": "Zaporozhets Yura <works.yura@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:YuraDev/tor-stem.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YuraDev/tor-stem/issues"
+  },
+  "homepage": "https://github.com/YuraDev/tor-stem#readme",
+  "keywords": [
+    "tor",
+    "request"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "socks": "^1.1.10",
+    "temp": "^0.8.3"
+  }
+}
